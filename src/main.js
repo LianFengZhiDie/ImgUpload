@@ -4,10 +4,9 @@
 import Vue from 'vue'
 import VueClipboard from 'vue-clipboard2'
 import App from '@/App'
-// import store from '@/store'
 import router from '@/router'
 import Axios from '@/server/Axios.js'
-import {CONSTANT} from '@/assets/js/CONSTANT'
+
 import Head from '@/js/getCookies'
 import {loginAuth} from '@/assets/js/loginAuth'
 import ElementUI, { Message,MessageBox } from 'element-ui'
@@ -31,8 +30,6 @@ window.Vue = Vue
 Vue.config.productionTip = false
 //ajax插件
 Vue.prototype.$http = Axios
-
-Vue.prototype.$constant = CONSTANT
 
 Vue.prototype.$head = Head
 Vue.prototype.$loginAuth = loginAuth

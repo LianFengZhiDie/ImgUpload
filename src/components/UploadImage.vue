@@ -39,14 +39,12 @@
             title="预览"
         >
             <div slot="title"></div>
-            <vueSwiper v-if="filesList.length > 1" :previewList="previewLists"></vueSwiper>
             <img v-if="filesList.length === 1" width="100%" :src="dialogImageUrl" alt="">
         </el-dialog>
         
     </div>
 </template>
 <script>
-import vueSwiper from '@/components/VueSwiper.vue'
 export default {
     name: 'uploadImage',
     data () {
@@ -94,9 +92,6 @@ export default {
     },
     created () {
         this.FileReader = new FileReader()
-    },
-    components: {
-        vueSwiper
     },
     methods: {
         beforeUpload (file) {
