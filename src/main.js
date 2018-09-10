@@ -49,14 +49,7 @@ router.beforeEach((to, from, next) => {
   } else {
     next()
   }
-  //  else if (to.path && JSON.parse(sessionStorage.getItem('menuLinkList')).indexOf(to.path) > -1 && sessionStorage.getItem('user')) {
-  //   // 防止自动输入一些未授权的URL，判断存储在sessionStorage中的权限项(link 列表）是否 与当前路由一致
-  //   next()
-  // } else if (to.path && (JSON.parse(sessionStorage.getItem('menuLinkList')).indexOf(to.path) === -1 || !sessionStorage.getItem('user'))) {
-  //   debugger
-  //   console.log('hajasja')
-  //   next('/login')
-  // }
+  
 })
 /* eslint-disable no-new */
 let vm = new Vue({

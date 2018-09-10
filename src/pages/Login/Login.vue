@@ -2,10 +2,9 @@
   <div class="login-cmp">
     <div class="container">
       <div class="secL">
-        <h2>酒店预售信息管理系统</h2>
+        <h2>图片上传管理系统</h2>
         <p style="width:384px;text-align: left;">
-          集运营、客服、供应商管理、产品管理功能于一体的酒店预售信息管理系统，包含订单信息查询模块、用户行权处理模块、运营配置模块、供应商管理模块、权限管理及分层模块。支撑酒店预售业务产品信息更新与维护，提供客户服务流程的操作与记录。
-          <!--集运营、客服、供应商管理、产品管理功能于一体<br>的酒店预售信息管理系统，包含订单信息查询模块、<br>用户行权处理模块、运营配置模块、供应商管理模块、<br>权限管理及分层模块。支撑酒店预售业务产品信息<br>更新与维护，提供客户服务流程的操作与记录。-->
+          支持png和jpg格式的图片上传至服务器后，获取其URL
         </p>
       </div>
       <div class="secR">
@@ -26,10 +25,6 @@
               <input type="password" tabindex="2" id="password" name="password" notnull="true" info="密码"
                      autocomplete="off" placeholder="请输入密码" v-model="password">
             </div>
-            <!--<div class="item itemRadio clearfix">-->
-            <!--<input type="checkbox" style="float: left;width:13px;height: 25px" id="radioPass" onclick="checkbox();"><span>记住密码</span>-->
-            <!--<a href="#" style="float: right;">忘记密码?</a>-->
-            <!--</div>-->
             <div class="error-info">{{errinfo}}</div>
 
             <div class="item">
