@@ -1,7 +1,7 @@
 <template>
   <div class="top">
     <div class="logo">
-      <img src="https://www.changyoyo.com/static/images/logo.png">
+      <img src="">
     </div>
     <div class="topBar-title">图片管理系统</div>
     <div class="logout">
